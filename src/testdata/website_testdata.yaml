@@ -1,0 +1,16 @@
+chrome_brower: chrome
+
+saucedemo:
+  website: https://www.saucedemo.com/v1/index.html
+  username:
+    id: user-name
+    input:
+      standart: standard_user
+      locked: locked_out_user
+      problem: problem_user
+      performance: performance_glitch_user
+  password:
+    id: password
+    input: secret_sauce
+  login_button:
+    id: login-button

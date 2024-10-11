@@ -1,0 +1,116 @@
+chrome_brower: chrome
+
+saucedemo:
+  website: https://www.saucedemo.com/v1/index.html
+  username:
+    id: user-name
+    input:
+      standart: standard_user
+      locked: locked_out_user
+      problem: problem_user
+      performance: performance_glitch_user
+  password:
+    id: password
+    input: secret_sauce
+  login_button:
+    id: login-button
+
+list_products_page:
+  product_header:
+    xpath: //*[@id="inventory_filter_container"]/div
+    text: Products
+  shopping_cart:
+    xpath: //*[@id="shopping_cart_container"]
+  products: 
+    xpath: //*[@id="inventory_container"]/div
+  add_to_cart_button:
+    xpath: //*[@id="inventory_container"]/div/div[1]/div[3]/button
+  first_product:
+    class_name: inventory_item_name
+    class_price: inventory_item_price
+
+your_cart_page:
+  qty_header:
+    xpath: //*[@id="cart_contents_container"]/div/div[1]/div[1]
+    text: QTY
+  desc_header:
+    xpath: //*[@id="cart_contents_container"]/div/div[1]/div[2]
+    text: DESCRIPTION
+  product_name:
+    xpath: //*[@id="item_4_title_link"]/div
+  product_price: 
+    xpath: //*[@id="cart_contents_container"]/div/div[1]/div[3]/div[2]/div[2]/div
+  checkout_button:
+    xpath: //*[@id="cart_contents_container"]/div/div[2]/a[2]
+
+info_page:
+  header: 
+    xpath: //*[@id="contents_wrapper"]/div[2]
+    text: 'Checkout: Your Information'
+  first_name:
+    id: first-name
+    input: first_name
+  last_name:
+    id: last-name
+    input: last_name
+  zip_code:
+    id: postal-code
+    input: 777
+  continue_button:
+    xpath: //*[@id="checkout_info_container"]/div/form/div[2]/input
+
+overview_page:
+  header:
+    xpath: //*[@id="contents_wrapper"]/div[2]
+    text: 'Checkout: Overview'
+  qty_header:
+    xpath: //*[@id="checkout_summary_container"]/div/div[1]/div[1]
+    text: QTY
+  desc_header:
+    xpath: //*[@id="checkout_summary_container"]/div/div[1]/div[2]
+    text: DESCRIPTION
+  product_name:
+    xpath: //*[@id="item_4_title_link"]/div
+  product_price:
+    xpath: //*[@id="checkout_summary_container"]/div/div[1]/div[3]/div[2]/div[2]
+  payment_info:
+    cls: summary_info_label
+  shipping_info:
+    cls: summary_value_label
+  item_total:
+    cls: summary_subtotal_label
+  tax:
+    cls: summary_tax_label
+  total:
+    cls: summary_total_label
+  finish_button:
+    xpath: //*[@id="checkout_summary_container"]/div/div[2]/div[8]/a[2]
+  cancel_button:
+    xpath: //*[@id="checkout_summary_container"]/div/div[2]/div[8]/a[1]
+
+complete_page:
+  header:
+    xpath: //*[@id="contents_wrapper"]/div[2]
+    text: 'Finish'
+  name:
+    xpath: //*[@id="checkout_complete_container"]/h2
+    text: 'THANK YOU FOR YOUR ORDER'
+  message:
+    xpath: //*[@id="checkout_complete_container"]/div
+    text: 'Your order has been dispatched, and will arrive just as fast as the pony can get there!'
+  image:
+    xpath: //*[@id="checkout_complete_container"]/img
+
+products_data:
+  - name: Sauce Labs Backpack
+    price: $29.99
+  - name: Sauce Labs Bike Light
+    price: $9.99
+  - name: Sauce Labs Bolt T-Shirt
+    price: $15.99
+  - name: Sauce Labs Fleece Jacket
+    price: $49.99
+  - name: Sauce Labs Onesie
+    price: $7.99
+  - name: Test.allTheThings() T-Shirt (Red)
+    price: $15.99

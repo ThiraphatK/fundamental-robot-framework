@@ -1,0 +1,13 @@
+testdata1:
+  name: John
+  age: 23
+
+testdata2:
+  - name: John
+  - name: Doe
+
+testdata3:
+  - name: John
+    age: 23
+  - name: Doe
+    age: 24
