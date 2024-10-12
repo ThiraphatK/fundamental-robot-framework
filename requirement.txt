@@ -1,0 +1,6 @@
+pip install robotframework-seleniumlibrary
+pip install robotframework-collections
+pip install robotframework-operatingsystem
+pip install robotframework-datetime
+pip install robotframework-string
+pip install robotframework-csvlibrary
